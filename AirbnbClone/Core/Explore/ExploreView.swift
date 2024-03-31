@@ -11,12 +11,20 @@ struct ExploreView: View {
     var body: some View {
         NavigationStack {
             SearchAndFilterBar()
+            
             ScrollView(content: {
-                LazyVStack(spacing: 25) {
+                LazyVStack(spacing: 10) {
                     ForEach(0...10, id: \.self) { listing in
-                        ListingItemView()
+                        NavigationLink(value: listing) {
+                            ListingItemView()
+                        }
                     }
                 }
+            }
+            )
+            .navigationDestination(for: Int.self, destination: {
+                listing in
+                Text("Detail View...")
             })
         }
     }
