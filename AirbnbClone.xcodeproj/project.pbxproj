@@ -11,6 +11,9 @@
 		C52CC4D32BB9C44500B79B1D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52CC4D22BB9C44500B79B1D /* ContentView.swift */; };
 		C52CC4D52BB9C44700B79B1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C52CC4D42BB9C44700B79B1D /* Assets.xcassets */; };
 		C52CC4D82BB9C44700B79B1D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C52CC4D72BB9C44700B79B1D /* Preview Assets.xcassets */; };
+		C52CC4EB2BB9C52300B79B1D /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52CC4EA2BB9C52300B79B1D /* ExploreView.swift */; };
+		C52CC4ED2BB9C5C400B79B1D /* ListingItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52CC4EC2BB9C5C400B79B1D /* ListingItemView.swift */; };
+		C52CC4EF2BB9CA3700B79B1D /* SearchAndFilterBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52CC4EE2BB9CA3700B79B1D /* SearchAndFilterBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		C52CC4D22BB9C44500B79B1D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C52CC4D42BB9C44700B79B1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C52CC4D72BB9C44700B79B1D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C52CC4EA2BB9C52300B79B1D /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		C52CC4EC2BB9C5C400B79B1D /* ListingItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingItemView.swift; sourceTree = "<group>"; };
+		C52CC4EE2BB9CA3700B79B1D /* SearchAndFilterBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAndFilterBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +57,11 @@
 		C52CC4CF2BB9C44500B79B1D /* AirbnbClone */ = {
 			isa = PBXGroup;
 			children = (
-				C52CC4D02BB9C44500B79B1D /* AirbnbCloneApp.swift */,
+				C52CC4DE2BB9C45A00B79B1D /* App */,
+				C52CC4E22BB9C48000B79B1D /* Utils */,
+				C52CC4E12BB9C47A00B79B1D /* Models */,
+				C52CC4E02BB9C47300B79B1D /* Extensions */,
+				C52CC4DF2BB9C46B00B79B1D /* Core */,
 				C52CC4D22BB9C44500B79B1D /* ContentView.swift */,
 				C52CC4D42BB9C44700B79B1D /* Assets.xcassets */,
 				C52CC4D62BB9C44700B79B1D /* Preview Content */,
@@ -65,6 +75,101 @@
 				C52CC4D72BB9C44700B79B1D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C52CC4DE2BB9C45A00B79B1D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C52CC4D02BB9C44500B79B1D /* AirbnbCloneApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C52CC4DF2BB9C46B00B79B1D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C52CC4E92BB9C4DD00B79B1D /* WishList */,
+				C52CC4E82BB9C4D700B79B1D /* TabBar */,
+				C52CC4E72BB9C4D200B79B1D /* Root */,
+				C52CC4E62BB9C4CE00B79B1D /* Profile */,
+				C52CC4E52BB9C4CA00B79B1D /* MapView */,
+				C52CC4E42BB9C4C500B79B1D /* Listings */,
+				C52CC4E32BB9C4BF00B79B1D /* Explore */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C52CC4E02BB9C47300B79B1D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C52CC4E12BB9C47A00B79B1D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C52CC4E22BB9C48000B79B1D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C52CC4E32BB9C4BF00B79B1D /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				C52CC4EA2BB9C52300B79B1D /* ExploreView.swift */,
+				C52CC4EE2BB9CA3700B79B1D /* SearchAndFilterBar.swift */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		C52CC4E42BB9C4C500B79B1D /* Listings */ = {
+			isa = PBXGroup;
+			children = (
+				C52CC4EC2BB9C5C400B79B1D /* ListingItemView.swift */,
+			);
+			path = Listings;
+			sourceTree = "<group>";
+		};
+		C52CC4E52BB9C4CA00B79B1D /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
+		C52CC4E62BB9C4CE00B79B1D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		C52CC4E72BB9C4D200B79B1D /* Root */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		C52CC4E82BB9C4D700B79B1D /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		C52CC4E92BB9C4DD00B79B1D /* WishList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WishList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +243,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C52CC4D32BB9C44500B79B1D /* ContentView.swift in Sources */,
+				C52CC4ED2BB9C5C400B79B1D /* ListingItemView.swift in Sources */,
+				C52CC4EB2BB9C52300B79B1D /* ExploreView.swift in Sources */,
+				C52CC4EF2BB9CA3700B79B1D /* SearchAndFilterBar.swift in Sources */,
 				C52CC4D12BB9C44500B79B1D /* AirbnbCloneApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
